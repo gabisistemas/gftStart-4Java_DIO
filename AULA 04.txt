@@ -1,0 +1,44 @@
+ - GIT INIT - inicializa o reporsitório; ao usar o GIT INIT estamos criando o repositório do GIT na pasta;
+ - GIT ADD - move o arquivo direto para o STAGE;
+ - GIT STATUS - informa o status do arquivo;
+ - GIT CLONE - clonar o código do GIT;
+ - COMMIT - transforma o arquivo STAGE para COMMIT / UNMODIFIED;
+
+ - MKDIR - criar pastas
+ - MV - mover para pasta ./nome da pasta
+ - ls - listar arquivos
+
+ - UNTRACKED - arquivos que o GIT não tem ciência da existência;
+ - TRACKED - arquivos que o GIT tem ciência da existência;
+	UNMODIFIED - arquivo que não sofreu modificação;
+	MODIFIEAD - arquivo que sofreu modificação;
+	STAGED - conceito chave; arquivos que estão preparados para fazer parte de um outro tipo de grupamento;
+
+- ALTERAR EMAIL E NOME DE USUÁRIO DO GIT
+	> $ git config --global --unset user.email
+	> $ git config --global --unset.name
+ 	> $ git commit --global user.mail "email"
+	> $ git commit --global user.name "nome"
+
+- INICIAR UM COMMIT
+	1. Criar um repositório no GIT - NEW;
+	2. Criar pasta referente ao projeto;
+	3. Abrir Git Bash da pasta;
+	4. Iniciar commit;
+		> $ git init 
+		> $ git remote add origin https:... _(copiar do <code> do git)
+	5. Criar arquivos na pasta;
+	6. Continuar commit;
+		>$ git add .
+		>$ git commit -m "NOMEAR O REPOSITÓRIO"
+		>$ git push -u origin master
+		>$ git status
+
+- RESOLVENDO CONFLITOS - CONFLITO DE MERGE : ocorrem quando alterações concorrentes são feitas na mesma linha de um arquivo ou quando uma pessoa edita um arquivo e outra pessoa exclui o mesmo arquivo. Sendo necessário uma intervenção manual para resolução do conflito.
+	1.
+
+*SEMPRE QUE FOR ATUALIZAR O REPOSITÓRIO:*
+	*>$ git add .*
+	*>$ git commit -m "NOMEAR O REPOSITÓRIO"*
+	*>$ git push -u origin master*
+	*>$ git status*		
